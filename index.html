@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Password Generator </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="title"> Password Generator </h1>
+
+    <!-- Password -->
+    <div class="password-field">
+        <p id="password">randomPassword</p>
+    </div>
+    
+    <div class="button-container">
+        <div class="button"><p> 📋 COPY TO CLIPBOARD</p></div>
+        <div class="button"><p> 🔄 RESET</p></P></div>
+    </div>
+
+<div class="options">
+    <!-- LENGTH -->
+    <div class="slidecontainer">
+        <input type="range" min="6" max="50" class="slider" id="myRange">
+        <p id="length">Length: <span id="demo"></span></p>
+    </div>
+<!-- Uppercase -->
+ <label class="parameters-container">Uppercase
+    <input class="css-checkbox" type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+    <span class="checkmark"></span>
+ </label>
+<!--  lowercase -->
+ <label class="parameters-container">Lowercase
+    <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+    <span class="checkmark"></span>
+ </label>
+<!-- Numbers -->
+ <label class="parameters-container">Numbers
+    <input type="checkbox" id="numbers" name="numbers" value="numbers">
+    <span class="checkmark"> </span>
+ </label>
+<!--  Symbols -->
+ <label class="parameters-container">Symbols
+    <input type="checkbox" id="symbols" name="symbols" value="symbols">
+    <span class="checkmark"> </span>
+ </label>
+</div>
+<div class="submit-container">
+    <p>GENERATE PASSWORD</p>
+</div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
