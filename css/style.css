@@ -4,6 +4,7 @@ body{
     background: linear-gradient(to right, #02111D, #434343, #02111D);
     padding: 10px;
     color: #eee;
+    height: 95vh;
   }
 
   .title{
@@ -11,12 +12,12 @@ body{
       margin: 2vh auto 2vh auto;
   }
 
-
   .password-field{
       background-color: #ddd;
       width: 70%;
-      margin: 0 auto;
+      margin: 1vh auto;
       border-radius: 1vh;
+      overflow-x: auto;
   }
   #password{
     text-align: center;
