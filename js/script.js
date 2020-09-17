@@ -39,6 +39,22 @@ resetButton.onclick =()=>{
   generateButton.click();
 }
 
+copyButton.onclick = ()=>{
+  if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById("password"));
+    range.select().createTextRange();
+    document.execCommand("copy");
+  } else if (window.getSelection) {
+    var range = document.createRange();
+    range.selectNode(document.getElementById("password"));
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    alert("Password copied");
+    window.getSelection().removeAllRanges();
+  }
+}
+
 //generate an all-lowerase password
 function generatePasswordLower(len) {
   var str = "";
