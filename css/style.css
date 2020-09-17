@@ -152,6 +152,10 @@ body{
   .submit-container{
     display: flex;
     justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .submit-container p{
     opacity: 0.9;
